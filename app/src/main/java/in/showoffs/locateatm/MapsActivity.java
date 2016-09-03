@@ -229,7 +229,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mPlaceTypeName = getResources().getStringArray(R.array.place_type_name);
         textView = (TextView) findViewById(R.id.showTime);
 
-
         btn_searchCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
