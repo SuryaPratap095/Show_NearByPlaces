@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LocationNearby</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="str_btn_find">Find</string>
+
+    <string-array name="place_type">
+
+        OTHER
+        ACCOUNTING
+        AIRPORT
+        AMUSEMENT_PARK
+        AQUARIUM
+        ART_GALLERY
+        ATM
+        BAKERY
+        BANK
+        BAR
+        BEAUTY_SALON
+        BICYCLE_STORE
+        BOOK_STORE
+        BOWLING_ALLEY
+        BUS_STATION
+        CAFE
+        CAMPGROUND
+        CAR_DEALER
+        CAR_RENTAL
+        CAR_REPAIR
+        CAR_WASH
+        CASINO
+        CEMETERY
+        CHURCH
+        CITY_HALL
+        CLOTHING_STORE
+        CONVENIENCE_STORE
+        COURTHOUSE
+        DENTIST
+        DEPARTMENT_STORE
+        DOCTOR
+        ELECTRICIAN
+        ELECTRONICS_STORE
+        EMBASSY
+        ESTABLISHMENT
+        FINANCE
+        FIRE_STATION
+        FLORIST
+        FOOD
+        FUNERAL_HOME
+        FURNITURE_STORE
+        GAS_STATION
+        GENERAL_CONTRACTOR
+        GROCERY_OR_SUPERMARKET
+        GYM
+        HAIR_CARE
+        HARDWARE_STORE
+        HEALTH
+        HINDU_TEMPLE
+        HOME_GOODS_STORE
+        HOSPITAL
+        INSURANCE_AGENCY
+        JEWELRY_STORE
+        LAUNDRY
+        LAWYER
+        LIBRARY
+        LIQUOR_STORE
+        LOCAL_GOVERNMENT_OFFICE
+        LOCKSMITH
+        LODGING
+        MEAL_DELIVERY
+        MEAL_TAKEAWAY
+        MOSQUE
+        MOVIE_RENTAL
+        MOVIE_THEATER
+        MOVING_COMPANY
+        MUSEUM
+        NIGHT_CLUB
+        PAINTER
+        PARK
+        PARKING
+        PET_STORE
+        PHARMACY
+        PHYSIOTHERAPIST
+        PLACE_OF_WORSHIP
+        PLUMBER
+        POLICE
+        POST_OFFICE
+        REAL_ESTATE_AGENCY
+        RESTAURANT
+        ROOFING_CONTRACTOR
+        RV_PARK
+        SCHOOL
+        SHOE_STORE
+        SHOPPING_MALL
+        SPA
+        STADIUM
+        STORAGE
+        STORE
+        SUBWAY_STATION
+        SYNAGOGUE
+        TAXI_STAND
+        TRAIN_STATION
+        TRAVEL_AGENCY
+        UNIVERSITY
+        VETERINARY_CARE
+        ZOO
+        ADMINISTRATIVE_AREA_LEVEL_1
+        ADMINISTRATIVE_AREA_LEVEL_2
+        ADMINISTRATIVE_AREA_LEVEL_3
+        COLLOQUIAL_AREA
+        COUNTRY
+        FLOOR
+        GEOCODE
+        INTERSECTION
+        LOCALITY
+        NATURAL_FEATURE
+        NEIGHBORHOOD
+        POLITICAL
+        POINT_OF_INTEREST
+        POST_BOX
+        POSTAL_CODE
+        POSTAL_CODE_PREFIX
+        POSTAL_TOWN
+        PREMISE
+        ROOM
+        ROUTE
+        STREET_ADDRESS
+        SUBLOCALITY
+        SUBLOCALITY_LEVEL_1
+        SUBLOCALITY_LEVEL_2
+        SUBLOCALITY_LEVEL_3
+        SUBLOCALITY_LEVEL_4
+        SUBLOCALITY_LEVEL_5
+        SUBPREMISE
+        SYNTHETIC_GEOCODE
+        TRANSIT_STATION
+
+
+    </string-array>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="place_type_name">
+        <item>All</item>
+        <item>Accounting</item>
+        <item>Airport</item>
+        <item>Amusement Park</item>
+        <item>Aquarium</item>
+        <item>Art Gallery</item>
+        <item>Atm</item>
+        <item>Bakery</item>
+        <item>Bank</item>
+        <item>Bar</item>
+        <item>Beauty Salon</item>
+        <item>Bicycle Store</item>
+        <item>Book Store</item>
+        <item>Bowling Alley</item>
+        <item>Bus Station</item>
+        <item>Cafe</item>
+        <item>Campground</item>
+        <item>Car Dealer</item>
+        <item>Car Rental</item>
+        <item>Car Repair</item>
+        <item>Car Wash</item>
+        <item>Casino</item>
+        <item>Cemetery</item>
+        <item>Church</item>
+        <item>City Hall</item>
+        <item>Clothing Store</item>
+        <item>Convenience Store</item>
+        <item>Courthouse</item>
+        <item>Dentist</item>
+        <item>Department Store</item>
+        <item>Doctor</item>
+        <item>Electrician</item>
+        <item>Electronics Store</item>
+        <item>Embassy</item>
+        <item>Establishment</item>
+        <item>Finance</item>
+        <item>Fire Station</item>
+        <item>Florist</item>
+        <item>Food</item>
+        <item>Funeral Home</item>
+        <item>Furniture Store</item>
+        <item>Gas Station</item>
+        <item>General Contractor</item>
+        <item>Grocery Or Supermarket</item>
+        <item>Gym</item>
+        <item>Hair Care</item>
+        <item>Hardware Store</item>
+        <item>Health</item>
+        <item>Hindu Temple</item>
+        <item>Home Goods Store</item>
+        <item>Hospital</item>
+        <item>Insurance Agency</item>
+        <item>Jewelry Store</item>
+        <item>Laundry</item>
+        <item>Lawyer</item>
+        <item>Library</item>
+        <item>Liquor Store</item>
+        <item>Local Government Office</item>
+        <item>Locksmith</item>
+        <item>Lodging</item>
+        <item>Meal Delivery</item>
+        <item>Meal Takeaway</item>
+        <item>Mosque</item>
+        <item>Movie Rental</item>
+        <item>Movie Theater</item>
+        <item>Moving Company</item>
+        <item>Museum</item>
+        <item>Night Club</item>
+        <item>Painter</item>
+        <item>Park</item>
+        <item>Parking</item>
+        <item>Pet Store</item>
+        <item>Pharmacy</item>
+        <item>Physiotherapist</item>
+        <item>Place Of Worship</item>
+        <item>Plumber</item>
+        <item>Police</item>
+        <item>Post Office</item>
+        <item>Real Estate Agency</item>
+        <item>Restaurant</item>
+        <item>Roofing Contractor</item>
+        <item>Rv Park</item>
+        <item>School</item>
+        <item>Shoe Store</item>
+        <item>Shopping Mall</item>
+        <item>Spa</item>
+        <item>Stadium</item>
+        <item>Storage</item>
+        <item>Store</item>
+        <item>Subway Station</item>
+        <item>Synagogue</item>
+        <item>Taxi Stand</item>
+        <item>Train Station</item>
+        <item>Travel Agency</item>
+        <item>University</item>
+        <item>Veterinary Care</item>
+        <item>Zoo</item>
+    </string-array>
+
+    <string-array name="place_type_id">
+        <item>All</item>
+        <item>Accounting</item>
+        <item>Airport</item>
+        <item>Amusement_Park</item>
+        <item>Aquarium</item>
+        <item>Art_Gallery</item>
+        <item>Atm</item>
+        <item>Bakery</item>
+        <item>Bank</item>
+        <item>Bar</item>
+        <item>Beauty_Salon</item>
+        <item>Bicycle_Store</item>
+        <item>Book_Store</item>
+        <item>Bowling_Alley</item>
+        <item>Bus_Station</item>
+        <item>Cafe</item>
+        <item>Campground</item>
+        <item>Car_Dealer</item>
+        <item>Car_Rental</item>
+        <item>Car_Repair</item>
+        <item>Car_Wash</item>
+        <item>Casino</item>
+        <item>Cemetery</item>
+        <item>Church</item>
+        <item>City_Hall</item>
+        <item>Clothing_Store</item>
+        <item>Convenience_Store</item>
+        <item>Courthouse</item>
+        <item>Dentist</item>
+        <item>Department_Store</item>
+        <item>Doctor</item>
+        <item>Electrician</item>
+        <item>Electronics_Store</item>
+        <item>Embassy</item>
+        <item>Establishment</item>
+        <item>Finance</item>
+        <item>Fire_Station</item>
+        <item>Florist</item>
+        <item>Food</item>
+        <item>Funeral_Home</item>
+        <item>Furniture_Store</item>
+        <item>Gas_Station</item>
+        <item>General_Contractor</item>
+        <item>Grocery_Or_Supermarket</item>
+        <item>Gym</item>
+        <item>Hair_Care</item>
+        <item>Hardware_Store</item>
+        <item>Health</item>
+        <item>Hindu_Temple</item>
+        <item>Home_Goods_Store</item>
+        <item>Hospital</item>
+        <item>Insurance_Agency</item>
+        <item>Jewelry_Store</item>
+        <item>Laundry</item>
+        <item>Lawyer</item>
+        <item>Library</item>
+        <item>Liquor_Store</item>
+        <item>Local_Government_Office</item>
+        <item>Locksmith</item>
+        <item>Lodging</item>
+        <item>Meal_Delivery</item>
+        <item>Meal_Takeaway</item>
+        <item>Mosque</item>
+        <item>Movie_Rental</item>
+        <item>Movie_Theater</item>
+        <item>Moving_Company</item>
+        <item>Museum</item>
+        <item>Night_Club</item>
+        <item>Painter</item>
+        <item>Park</item>
+        <item>Parking</item>
+        <item>Pet_Store</item>
+        <item>Pharmacy</item>
+        <item>Physiotherapist</item>
+        <item>Place_Of_Worship</item>
+        <item>Plumber</item>
+        <item>Police</item>
+        <item>Post_Office</item>
+        <item>Real_Estate_Agency</item>
+        <item>Restaurant</item>
+        <item>Roofing_Contractor</item>
+        <item>Rv_Park</item>
+        <item>School</item>
+        <item>Shoe_Store</item>
+        <item>Shopping_Mall</item>
+        <item>Spa</item>
+        <item>Stadium</item>
+        <item>Storage</item>
+        <item>Store</item>
+        <item>Subway_Station</item>
+        <item>Synagogue</item>
+        <item>Taxi_Stand</item>
+        <item>Train_Station</item>
+        <item>Travel_Agency</item>
+        <item>University</item>
+        <item>Veterinary_Care</item>
+        <item>Zoo</item>
+    </string-array>
+
+    <string name="place_details">&lt;b&gt;%1$s&lt;/b&gt;&lt;br/&gt;&lt;i&gt;Place Id: %2$s&lt;/i&gt;&lt;br/&gt;Address: %3$s&lt;br/&gt;Phone: %4$s&lt;br/&gt;Website: %5$s</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_accounts">Account</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+</resources>

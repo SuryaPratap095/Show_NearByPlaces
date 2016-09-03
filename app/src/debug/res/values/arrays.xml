@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cluster">
+        <item >Aurangabad</item>
+        <item >Amravati</item>
+        <item >Nasik</item>
+        <item >Nagpur</item>
+        <item >Kolhapur</item>
+        <item >Solapur</item>
+        <item >Goa</item>
+        <item >Nanded</item>
+        <item >Pune</item>
+        <item >Vasai</item>
+        <item >Chandrapur</item>
+    </string-array>
+    <string-array name="month">
+        <item >January</item>
+        <item >February</item>
+        <item >March</item>
+        <item >April</item>
+        <item >May</item>
+        <item >June</item>
+        <item >July</item>
+        <item >August</item>
+        <item >September</item>
+        <item >October</item>
+        <item >November</item>
+        <item >December</item>
+    </string-array>
+
+    <string-array name="nameOfStore">
+        <item > "Pegasus Communication PQG27</item>
+        <item >  Khandelwal Radios NGG10</item>
+        <item >  Rajat Cellular</item>
+        <item >  Cell Plus AUG19</item>
+        <item >  Dsk Communication AUG37</item>
+        <item > Bang Cellular NKVS109</item>
+        <item > Magnum Cellular Services NGG20</item>
+        <item > Atharva Communications KLG46</item>
+        <item >  Meghna Communication NKG77</item>
+        <item > Kunica Celluler AUG39</item>
+        <item > Pragati Comunication KLG56</item>
+        <item > Shrikant Enterprises KLG57</item>
+        <item > Sagar Mobiles AUG14</item>
+        <item >City Link Services GOG09</item>
+        <item >The Service First Co GOG15</item>
+        <item >Ramp Communications NGG64</item>
+        <item > MM Wirecoms NGG31</item>
+        <item >A V Communication NGG28</item>
+        <item >R Y Distribution Services Pvt Ltd NGG27</item>
+        <item > Raj Enterprises NGG125</item>
+        <item > Avirat Communications NGG112</item>
+        <item > Midas cellular SLG08</item>
+        <item > Bang Cellular NKG129</item>
+        <item > Bang Agency NKG118</item>
+        <item > City Point GOG33</item>
+        <item > Rajeshawr Associate SLG29</item>
+        <item > Kanaka Communication GOG34</item>
+        <item >Worldtech PQG52</item>
+        <item > Shradha Enterprises PQG133</item>
+        <item >M Zone PQG104</item>
+        <item >Vodafone Store Camp PQS02</item>
+        <item >Sai Communication PQG22</item>
+        <item >Dhankawadi PQG51</item>
+        <item >Shiv Communication PQG53</item>
+        <item > Matrix Communication PQG67</item>
+        <item >Nexus Communication PQG57</item>
+        <item > Matrix Communication PQG97</item>
+        <item > Vodafone Store PQS01</item>
+        <item >Expertise PQVS117</item>
+        <item > Vodafone Store PQS03</item>
+        <item > Jak Associates PQG123</item>
+        <item >Jak Associates PQG125</item>
+        <item >Satguru Telecom PQG146</item>
+        <item > Mobile Technology KLG30</item>
+        <item > Aditya Telecom SLG23</item>
+        <item > Angel Communication</item>
+        <item > City Connect GOG35</item>
+        <item > ABHAYRAJ ENTERPRISE NKG125</item>
+        <item >GPO PQS04</item>
+        <item > Erandwane PQS05</item>
+        <item > Aundh road PQS06</item>
+        <item > JM road PQS07</item>
+        <item >LaxmipurI KLS03</item>
+        <item > SANGLI KLS02</item>
+        <item > Jalna Road AUS01</item>
+        <item > Dharampeth NGS01</item>
+        <item >Sitabuldi NGS02</item>
+        <item >CBS Nasik COCO NKS01</item>
+        <item >Poonam Chembar NGS03</item>
+        <item >Karve Road PQS08</item>
+        <item > Virar COCO Store VASS02</item>
+        <item > Vasai coco store VASS01</item>
+        <item > VODAFONE STORE BADNERA RD AMS01</item>
+        <item >VODAFONE STORE GARKHEDA AUS02</item>
+        <item > Chinchwad Link Road PQS09</item>
+        <item > Pimple Saudagar PQS10</item>
+        <item > Hotgi Road SLS01</item>
+        <item > ADI AMMA MOBILE WORLD VAG27</item>
+        <item >Aurangabad CIDCO</item>
+        <item >Nasik Road COCO Store NKS03</item>
+        <item > Bhiwandi VASS03</item>
+        <item > Sharanpur NKS02"</item>
+    </string-array>
+
+    <string-array name="location">
+        <item >Ahmednagar</item>
+        <item >Akola</item>
+        <item > Amravati</item>
+        <item > Aurangabad</item>
+        <item > Dhule</item>
+        <item > Gondia</item>
+        <item >Ichalkaranji</item>
+        <item >Jalgaon</item>
+        <item > Jalna</item>
+        <item > Karad</item>
+        <item > Kolhapur</item>
+        <item >Latur</item>
+        <item > Mapusa</item>
+        <item > Margao</item>
+        <item > Nagpur</item>
+        <item > Nanded</item>
+        <item > Nasik</item>
+        <item >Panjim</item>
+        <item > Parbhani</item>
+        <item >Ponda</item>
+        <item >Pune</item>
+        <item > Satara</item>
+        <item > Solapur</item>
+        <item > Vasai</item>
+        <item >Vasco</item>
+        <item >Sangli</item>
+        <item > Virar</item>
+        <item > Vasai</item>
+        <item > Garkheda</item>
+        <item > Ullasnagar</item>
+        <item > Bhiwandi</item>
+        <item >Sharanpur</item>
+
+    </string-array>
+
+    <string-array name="LOC_ID_store_code">
+        <item > VS_MH_0001</item>
+        <item > VS_MH_0002</item>
+        <item > VS_MH_0003</item>
+        <item > VS_MH_0004</item>
+        <item > VS_MH_0005</item>
+        <item > VS_MH_0007</item>
+        <item > VS_MH_0008</item>
+        <item > VS_MH_0009</item>
+        <item > VS_MH_0010</item>
+        <item > VS_MH_0011</item>
+        <item > VS_MH_0012</item>
+        <item > VS_MH_0013</item>
+        <item > VS_MH_0014</item>
+        <item > VS_MH_0015</item>
+        <item > VS_MH_0016</item>
+        <item > VS_MH_0017</item>
+        <item > VS_MH_0018</item>
+        <item > VS_MH_0019</item>
+        <item > VS_MH_0020</item>
+        <item > VS_MH_0021</item>
+        <item > VS_MH_0022</item>
+        <item > VS_MH_0023</item>
+        <item > VS_MH_0024</item>
+        <item > VS_MH_0026</item>
+        <item > VS_MH_0027</item>
+        <item > VS_MH_0028</item>
+        <item > VS_MH_0029</item>
+        <item > VS_MH_0030</item>
+        <item > VS_MH_0031</item>
+        <item > VS_MH_0032</item>
+        <item > VS_MH_0033</item>
+        <item > VS_MH_0034</item>
+        <item > VS_MH_0035</item>
+        <item > VS_MH_0036</item>
+        <item > VS_MH_0037</item>
+        <item > VS_MH_0038</item>
+        <item > VS_MH_0039</item>
+        <item > VS_MH_0040</item>
+        <item > VS_MH_0041</item>
+        <item > VS_MH_0042</item>
+        <item > VS_MH_0043</item>
+        <item > VS_MH_0044</item>
+        <item > VS_MH_0045</item>
+        <item > VS_MH_0046</item>
+        <item > VS_MH_0047</item>
+        <item > VS_MH_0048</item>
+        <item > VS_MH_0049</item>
+        <item > VS_MH_0050</item>
+        <item > VS_MH_0052</item>
+        <item > VS_MH_0053</item>
+        <item > VS_MH_0054</item>
+        <item > VS_MH_0055</item>
+        <item > VS_MH_0056</item>
+        <item > VS_MH_0057</item>
+        <item > VS_MH_0058</item>
+        <item > VS_MH_0059</item>
+        <item > VS_MH_0060</item>
+        <item > VS_MH_0061</item>
+        <item > VS_MH_0062</item>
+        <item > VS_MH_0063</item>
+        <item > VS_MH_0064</item>
+        <item > VS_MH_0065</item>
+        <item > VS_MH_0066</item>
+        <item > VS_MH_0067</item>
+        <item > VS_MH_0068</item>
+        <item > VS_MH_0069</item>
+        <item > VS_MH_0070</item>
+        <item > VS_MH_0071</item>
+        <item > VS_MH_0072</item>
+        <item > VS_MH_0073</item>
+        <item > VS_MH_0074</item>
+        <item > VS_MH_0075</item>
+
+    </string-array>
+
+    <string-array name="name_of_QA">
+        <item > Parag Tamboli</item>
+        <item > Sagar Shewale</item>
+        <item > Ajaykumar Dagor</item>
+        <item > Akashkumar</item>
+        <item > Ravel Jais</item>
+        <item > Shahbaz Shaikh</item>
+        <item > Ganesh Manekar</item>
+        <item > Nikhil Tiwari</item>
+        <item > Sangram Haldankar</item>
+        <item > Nagesh Patki</item>
+        <item > Kunal Chalikwar</item>
+        <item > Imran Indikar</item>
+        <item > Deepankar Dhiwar</item>
+        <item > Shrikant Suryawanshi</item>
+
+    </string-array>
+
+    <string-array name="store_Types">
+        <item >ROTO</item>
+        <item >NON-ROTO</item>
+        <item >GLOBAL</item>
+    </string-array>
+
+    <string-array name="certification_status">
+        <item>Certified</item>
+        <item>Not-Certified</item>
+
+    </string-array>
+    <string-array name="scenario_Type">
+        <item>Type 1</item>
+        <item>Type 2</item>
+        <item>Type 3</item>
+    </string-array>
+
+    <string-array name="scenario_Sub_Type">
+        <item>Sub Type 1</item>
+        <item>Sub Type 2</item>
+        <item>Sub Type 3</item>
+    </string-array>
+    <string-array name="customer_segments">
+        <item>Prepaid</item>
+        <item>Postpaid</item>
+    </string-array>
+
+    <string-array name="reson_of_walkIn">
+        <item>Bill Dispute</item>
+        <item>Sim Replacement</item>
+        <item>3G Service</item>
+        <item> Balance Deduction Query</item>
+    </string-array>
+
+    <string-array name="store_status">
+        <item>OPEN</item>
+        <item>CLOSED</item>
+    </string-array>
+
+    <string-array name="audit_mode">
+        <item>Live</item>
+        <item>Mock Call</item>
+        <item>Field Visit</item>
+    </string-array>
+
+    <string-array name="audit_type">
+        <item>2G</item>
+        <item>3G</item>
+    </string-array>
+</resources>

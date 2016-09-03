@@ -1,0 +1,454 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/po">
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:umanoPanelHeight="68dp"
+        sothree:umanoShadowHeight="4dp">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <fragment
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/map" tools:context=".MapsActivity"
+                android:name="com.google.android.gms.maps.SupportMapFragment" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/RL_Layout"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp">
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/RL_Layout"
+                android:layout_alignParentRight="true"
+                android:paddingTop="60dip"
+                android:id="@+id/linearLayout2"></LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="250dip"
+                        android:layout_height="50dip"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="#FFFFFF">
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/radioGroup">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Driving Mode"
+                                android:id="@+id/drivingModeRadio"
+                                android:checked="true"/>
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Walking Mode "
+                                android:id="@+id/walkingModeRadio"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/linearLayout">
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/ic_close_black_24dp"
+                    android:onClick="clear"/>
+                <CheckBox
+                    android:id="@+id/trafficCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Traffic" />
+                <CheckBox
+                    android:id="@+id/satelliteCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Satellite"
+                    android:layout_marginBottom="25dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/currentLocation"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:background="@drawable/current_location"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/range"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/range_icon"
+                android:layout_below="@+id/RL_Layout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/rangeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/range"
+                android:layout_marginLeft="10dp"
+                android:text="0.5"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Km"
+                android:layout_toRightOf="@+id/rangeNumber"
+                android:layout_below="@+id/range"
+                android:paddingRight="5dp"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:background="#F0F0F0"
+                android:layout_margin="20dp"
+                android:visibility="gone"
+                android:id="@+id/linearLayoutSlidingBar">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Range of Place Search"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"/>
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/discrete1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:dsb_min="1"
+                    app:dsb_max="50"
+                    app:dsb_progressColor="@color/my_progress_color"
+                    app:dsb_indicatorColor="@color/my_floater_color"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:weightSum="10">
+                    <Button
+                        android:id="@+id/ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ok"
+                        android:background="@null"
+                        android:textColor="#00AAFF"
+                        android:layout_weight="10"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/slidingLayout"
+            android:background="#f0f0f0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                  <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/backgroundImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dip"
+                        android:src="@drawable/images"
+                        android:scaleType="fitXY"
+                        android:visibility="visible"/>
+                    <LinearLayout
+                        android:id="@+id/titleT"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="20"
+                        android:padding="5dp"
+                        android:background="#fff0f0f0">
+
+                        <TextView
+                            android:id="@+id/showTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:text="ICICI Bank"
+                            android:textSize="25dp"
+                            android:paddingTop="3dp"
+                            android:singleLine="true"/>
+                        <ImageView
+                            android:id="@+id/walkingMode"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:padding="5dp"
+                            android:src="@drawable/unselect_walking"
+                            android:layout_weight="8"/>
+
+                        <ImageView
+                            android:padding="5dp"
+                            android:id="@+id/drivingMode"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:src="@drawable/unselect_car"
+                            android:layout_weight="8"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/lll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#ff3E69BB">
+                            <Button
+                                android:id="@+id/aboutButton"
+                                android:layout_weight="4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="About"
+                                android:textColor="@android:color/white"
+                                android:onClick="about"
+                                android:elevation="2dip"
+                                android:translationZ="2dip"
+                                android:background="@drawable/button_background"/>
+                            <Button
+                                android:id="@+id/reviewButton"
+                                android:layout_weight="4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Reviews"
+                                android:textColor="@android:color/white"
+                                android:onClick="review"
+                                android:background="#ff3E69BB"/>
+                            <Button
+                                android:id="@+id/photoButton"
+                                android:layout_weight="4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Photos"
+                                android:textColor="@android:color/white"
+                                android:onClick="photo"
+                                android:background="#ff3E69BB"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/aboutLinearLayout"
+                        android:layout_below="@+id/lll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:background="#f0f0f0"
+                        android:clickable="false"
+                        android:visibility="visible"
+                        android:layout_marginLeft="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/placeName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="30dp"
+                                android:text="Name"
+                                android:textColor="@android:color/black"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="5dp">
+                            <TextView
+                                android:id="@+id/placeAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@android:color/black"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="5dp">
+                            <RatingBar
+                                android:id="@+id/placeRatingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                style="?android:attr/ratingBarStyleIndicator"
+                                android:progressTint="@color/colorPrimary"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lPlaceContact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="5dp">
+                            <Button
+                                android:id="@+id/phoneCall"
+                                android:onClick="phoneCall"
+                                android:layout_width="35dip"
+                                android:layout_height="35dip"
+                                android:layout_marginRight="5dip"
+                                android:background="@drawable/call"/>
+                            <TextView
+                                android:id="@+id/placeContact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:text=""
+                                android:textColor="@android:color/black"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/reviewLinearLayout"
+                        android:layout_below="@+id/lll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/reviewLayout"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_below="@+id/lll"
+                        android:id="@+id/photoLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizontal_scroll"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:fillViewport="true">
+
+                            <LinearLayout
+                                android:id="@+id/linear"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:scaleType="fitCenter">
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+
+
+
+
+</RelativeLayout>

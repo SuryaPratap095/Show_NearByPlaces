@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.waves.customdialog.MyDialogFragment">
+
+    <!--Relative layout for title header-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RLLL1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/RL_Header_Title">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_title"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#409cff"
+                android:textSize="20sp"
+                android:text="Title"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchButton"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_search"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+
+        <!--Relative layout for search header-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:id="@+id/RL_Header_Search"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_back_black_24dp"
+                android:id="@+id/btn_backToHeaderTitle"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search here..."
+                android:focusable="true"
+
+                android:layout_toRightOf="@+id/btn_backToHeaderTitle"
+                android:layout_toLeftOf="@+id/btn_eraseTxt_searchView"
+                android:id="@+id/ed_searchView"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_close_black_24dp"
+                android:id="@+id/btn_eraseTxt_searchView"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--layout for line-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RLLL1"
+        android:id="@+id/lineBelowHeader">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#409cff"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lineBelowHeader"
+        android:layout_above="@+id/footer_buttn"
+        >
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/listView"
+            android:verticalScrollbarPosition="defaultPosition"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarSize="10dp"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+            android:layout_gravity="left|top"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/footer_buttn"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_ok"
+            android:textColor="#409cff"
+            android:text="CANCEL"/>
+    </RelativeLayout>
+
+</RelativeLayout>

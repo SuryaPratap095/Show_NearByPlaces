@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".NavigationDrawarItem.NavigationDrawer">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/topPanel"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@android:color/transparent"
+        >
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+
+            android:title="Map"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:id="@+id/RL_placeSearch"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_searchPlace"
+                    android:singleLine="true"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:layout_toLeftOf="@+id/iBtn_searchPlace"
+                    android:hint="Search place"
+                    android:layout_alignParentLeft="true"
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_toLeftOf="@+id/iBtn_selectCategory"
+                    android:id="@+id/iBtn_searchPlace"
+                    android:background="@drawable/ic_search_36pt"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Searh \n by category"
+                    android:textAllCaps="false"
+                    android:textSize="10dp"
+                    android:textColor="@android:color/black"
+                   android:background="@android:color/transparent"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/iBtn_selectCategory"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:id="@+id/RL_categorySearch"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iBtn_backToSearchPlace"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_arrow_back_black_24dp"
+                    android:layout_alignParentLeft="true"/>
+<!--
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iBtn_backToSearchPlace"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+-->
+
+
+                    <EditText
+                        android:id="@+id/input_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iBtn_backToSearchPlace"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:textColorHint="@android:color/black"
+                        android:textColor="@android:color/black"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:focusableInTouchMode="true"
+                        android:hint="Category" />
+
+              <!--  </android.support.design.widget.TextInputLayout>-->
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+         layout="@layout/activity_maps" />
+
+   <!-- <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email" />-->
+
+</android.support.design.widget.CoordinatorLayout>

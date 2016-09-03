@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_myPlaces"
+            android:icon="@drawable/my_places"
+            android:title="My Places" />
+        <item android:id="@+id/nav_nearPlaces"
+            android:icon="@drawable/near_places"
+            android:title="Near Places" />
+        <item android:id="@+id/nav_nearFriend"
+            android:icon="@drawable/find_friend"
+            android:title="Near Friends" />
+        <item android:id="@+id/nav_chat"
+            android:icon="@drawable/chat"
+            android:title="Chats" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/nav_account"
+                android:icon="@drawable/account"
+                android:title="Account" />
+            <item android:id="@+id/nav_invite_friend"
+                android:icon="@drawable/invite_friends"
+                android:title="Invite Friends" />
+            <item android:id="@+id/nav_setting"
+                android:icon="@drawable/settings"
+                android:title="Setting" />
+        </menu>
+    </item>
+
+</menu>
